@@ -1,354 +1,63 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+* , .contactus{
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif !important;
 }
-
-.header ul {
-  background-color: rgb(3, 9, 46);
-  color: white;
-  display: flex;
-  justify-content: end;
-  text-decoration: none;
-  align-items: center;
-  text-align: center;
-  height: 35px;
+.header, .end{
+  background-color: #03092e;
 }
-
 .header ul li {
-  margin-left: 70px;
-  text-decoration: none;
+  padding-left: 70px;
   margin-right: 35px;
-  list-style-type: none;
 }
-
-.nav-item {
-  margin-left: 25px;
-  margin-right: 15px;
-}
-
-.companylogo {
-  margin-left: 50px;
-}
-
 .quote {
-  height: 100%;
-  text-align: center;
-  justify-content: center;
   font-size: 60px;
-  font-weight: bolder;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-top: 5%;
 }
-
-.quotelibcloud {
-  color: rgb(228, 1, 133);
+.quotelibcloud, .quotes, .nav-item :hover,.navbar-nav .nav-link.active{
+  color: #ef1d7c
 }
-
-.contactus {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(89, 0, 255),
-    rgb(255, 0, 179)
-  );
-  border-radius: 50px;
-  color: white;
-  font-size: 25px;
-  height: 50px;
-  padding: 0px 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.contactus ,.readmore:hover {
+  background-image: linear-gradient(90deg,#2c7bf5,#ef1d7c) !important;
+  color: white !important;
 }
-#services {
-  margin: auto;
-  margin-left: 20%;
-  margin-top: 27px;
-}
-.quotes {
-  color: rgb(228, 1, 133);
-  font-size: larger;
-}
-.koha img {
-  margin: auto;
-  height: 60px;
-  width: 150px;
-  display: block;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.koha p {
-  text-align: center;
-  margin: auto;
-  margin-top: 27px;
-}
-
-.infoicons {
-  margin-top: 40px;
-  margin-left: 20%;
-  margin-right: 20%;
-  display: flex;
-  padding-left: 25px;
-  justify-content: space-around;
-}
-
 .btnicons {
-  height: 55px;
-  width: 55px;
-  margin-right: 50px;
-  margin-bottom: 15px;
   background-color: rgba(85, 85, 223, 0.932);
-  padding: 6px;
-  border-radius: 15px;
-  margin-left: 8px;
-}
-
-.aboutus img {
-  margin-top: 50px;
-  border-radius: 12px;
-  margin-right: 100px;
-}
-
-.aboutus {
-  display: flex;
-  margin-left: 25px;
-  margin-top: 70px;
-}
-
-.aboutus h2 {
-  font-weight: bolder;
-  font-size: 50px;
-}
-
+ }
 .aboutus h5 {
-  background-color: rgba(128, 128, 128, 0.329);
-  border-radius: 10px;
+  background-color: #9ac9e925;
   width: 125px;
-  padding: 10px;
-  text-align: center;
 }
-
-.chooselibcloud {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 50px;
-}
-
 .ourservices {
-  margin: auto;
-  text-align: center;
-  margin-top: 100px;
-  padding-bottom: 150px;
   background-color: rgba(0, 0, 0, 0.075);
 }
-.card {
-  box-shadow: 5px #6d6a6aa8;
-}
-
-.ourservices .container {
-  margin-top: 50px;
-  margin: auto;
-}
-
 .banner {
-  padding-left: 75px;
   background-color: #cfcfcf;
-  height: 280px;
 }
-
-.banner img {
-  padding-top: 75x;
+.aboutus button,.ourservices button {
+  border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) 3; 
 }
-
-.testimonals h2 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.clients h2 {
-  text-align: center;
-}
-
-.company {
-  display: inline-block;
-  margin-left: 35px;
-  padding-left: 15px;
-  margin: 5px;
-  height: 30px;
-  width: 100px;
-  padding-bottom: 5px;
-}
-
-.clients {
-  /* margin-top: 5px; */
-  text-align: center;
-  padding-left: 15px;
-  margin-bottom: 15px;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 0px;
-  background-color: rgba(128, 128, 128, 0.651);
-  color: black;
-}
-
-.header ul li :hover {
-  color: blue;
-}
-
-.nav-item :hover {
-  color: rgb(228, 1, 133);
-}
-
-.endofdoc {
-  display: flex;
-}
-
-.about {
-  background-color: rgb(3, 9, 46);
-  padding: 55px;
-  width: 50%;
-}
-
-.endofdoc li {
-  color: white;
-  padding-left: 20px;
-}
-
-.about p {
-  color: white;
-}
-
-.moresections .name {
-  display: inline-block;
-  color: rgb(17, 126, 250);
-}
-
-.moresections ul li {
-  color: white;
-}
-
-.end {
-  background-color: rgb(3, 9, 46);
-}
-
-.container .row .card .end {
-  background-color: rgb(3, 9, 46);
-  color: white;
-  list-style-type: none;
-}
-
-.end {
-  color: white;
-}
-
-.end h3 {
-  color: blue;
-}
-
-.icons {
-  display: flex;
-  display: inline-block;
-  padding-left: 25px;
-  font-size: medium;
-}
-
-.aboutus button,
-.ourservices button {
-  border-color: rgb(228, 1, 133);
-  color: black;
-  border-radius: 15px;
-}
-
 @media screen and (max-width: 915px) {
   .header ul li {
-    font-size: 11px;
-    margin-left: 1px;
+    font-size: 10px;
     padding: 0px;
-    cursor: pointer;
   }
-
   .companylogo img {
-    height: 30px;
+    height: 40px;
     width: 100px;
   }
-  #services {
-    margin: auto;
-  }
-
-  .companylogo {
-    margin: 0px;
-  }
-
   .quote {
     font-size: 35px;
   }
-
-  .koha img {
-    height: 50px;
-  }
-
   .aboutus img {
-    height: 400px;
-    width: 360px;
-    display: block;
+    height: 340px;
+    width: 380px;
   }
-
-  .aboutus {
-    display: block;
-    margin-top: 15px;
+  .aboutus .info{
+   padding-top: 30px;
   }
-
-  .aboutus .info h5 {
-    margin-top: 15px;
-  }
-
-  .chooselibcloud {
-    margin-top: 30px;
-  }
-
-  .ourservices h2 {
-    padding: 30px;
-  }
-
-  .banner {
-    height: 280px;
-  }
-
-  .clients h2 {
-    margin-bottom: 30px;
-  }
-
   .clients img {
     padding: 7px;
     margin-bottom: 35px;
   }
-
-  #logo {
-    height: 40px;
-  }
-
   .infoicons {
-    font-size: small;
     padding-left: 15px;
-    margin-left: 8px;
-    margin-right: 8px;
   }
-
-  .btnicons {
-    height: 40px;
-    width: 40px;
-    margin: auto;
-    border-radius: 8px;
-    padding: 6px;
-    margin-left: 10px;
-    margin-bottom: 10px;
   }
-
-  .banner button {
-    width: auto;
-    height: 40px;
-    font-size: 20px;
-  }
-}

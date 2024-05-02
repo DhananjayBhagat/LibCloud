@@ -17,21 +17,24 @@
 
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="header">
-    <ul>
-      <li><i class="fa-regular fa-envelope"></i> business@libcloud.in</li>
-      <li><i class="fa-solid fa-phone"></i> +91 28639465</li>
-      <li><i class="fa-brands fa-facebook"></i></li>
-      <li><i class="fa-brands fa-twitter"></i></li>
+  <div class="header text-white">
+    <ul class="d-flex justify-content-end align-items-center">
+      <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-regular fa-envelope"></i>
+        business@libcloud.in</li>
+      <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-solid fa-phone"></i> +91 28639465
+      </li>
+      <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-brands fa-facebook"></i></li>
+      <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-brands fa-twitter"></i></li>
     </ul>
   </div>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand companylogo" href="#"><img src="./assets/logo.png" height="70px" width="150px"
+      <a class="navbar-brand companylogo ms-5" href="#"><img src="./assets/logo.png" height="70px" width="150px"
           id="logo" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,19 +42,19 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav tags">
-          <li id="home" class="nav-item">
+          <li id="home" class="nav-item ms-lg-4 me-lg-3">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li id="Services" class="nav-item">
+          <li id="Services" class="nav-item ms-lg-4 me-lg-3">
             <a class="nav-link" href="#">Services</a>
           </li>
-          <li id="Business" class="nav-item">
+          <li id="Business" class="nav-item ms-lg-4 me-lg-3">
             <a class="nav-link" href="#">Business Associates</a>
           </li>
-          <li id="Contact" class="nav-item">
+          <li id="Contact" class="nav-item ms-lg-4 me-lg-3">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
-          <li id="Resources" class="nav-item">
+          <li id="Resources" class="nav-item ms-lg-4 me-lg-3">
             <a class="nav-link" href="#">Resources</a>
           </li>
         </ul>
@@ -59,68 +62,83 @@
     </div>
   </nav>
 
-  <div class="quote">
+  <div class="quote text-center pt-5 ">
     <p>
       <strong>Streamline Your Library <br />
         Management With <span class="quotelibcloud">LibCloud</span></strong>
     </p>
-    <button class="contactus">Contact Us</button>
+    <button class="contactus btn btn-lg px-3 text-white fw-bold rounded-pill">Contact Us</button>
   </div>
 
   <div class="koha">
     <div class="image">
-      <img src="./assets/Koha.png" alt="Koha Image" />
-      <p>Open Source Integrated Library System</p>
+      <img class="d-block mt-5 m-auto" src="./assets/Koha.png" height="60px" width="150px" alt="Koha Image" />
+      <p class="text-center m-auto mt-4">Open Source Integrated Library System</p>
     </div>
   </div>
 
-  <div class="infoicons">
+  <div class="infoicons d-flex justify-content-around mt-5 mx-lg-5 pl-lg-5 text-center">
     <div>
-      <img src="./assets/easy-installation.png" class="btnicons" alt="installation">
+      <!-- <img src="./assets/easy-installation.png" class="btnicons ml-2 mb-3 p-2 mr-5 rounded-6" height="55px" width="55px"
+        alt="installation"> -->
+      <i class="fa-solid fa-gear btnicons ml-2 mb-3 p-2 mr-5 rounded-6 text-white fs-1"></i>
+
       <p>Installation</p>
     </div>
     <div>
-
-      <img src="./assets/equalizer.png" class="btnicons" alt="customization">
+      <!-- 
+      <img src="./assets/equalizer.png" class="btnicons ml-2 p-2 mb-3 mr-5 rounded-6" height="55px" width="55px"
+        alt="customization"> -->
+      <i class="fa-solid fa-sliders fa-rotate-90 btnicons ml-2 mb-3 p-2 mr-5 rounded-6 text-white fs-1"></i>
       <p>Customization</p>
     </div>
     <div>
-      <img src="./assets/transfer.png" class="btnicons" alt="migrations">
+      <!-- <img src="./assets/transfer.png" class="btnicons ml-2 p-2 mb-3 mr-5 rounded-6" height="55px" width="55px"
+        alt="migrations"> -->
+      <i class="fa-solid fa-arrow-right-arrow-left btnicons ml-2 mb-3 p-2 mr-5 rounded-6 text-white fs-1"></i>
       <p>Migrations</p>
     </div>
+
     <div>
-      <img src="./assets/support.png" class="btnicons" alt="support">
+      <!-- <img src="./assets/support.png" class="btnicons ml-2 p-2 mb-3 mr-5 rounded-6" height="55px" width="55px"
+        alt="support"> -->
+      <i class="fa-solid fa-headset btnicons ml-2 mb-3 p-2 mr-5 rounded-6 text-white fs-1"></i>
       <p>Support</p>
     </div>
   </div>
 
-  <div class="aboutus">
-    <img src="./assets/books.jpg" alt="AboutImage" />
-    <div class="info">
-      <h5>About Us</h5>
-      <h2>
-        <i class="fa-solid fa-quote-left quotes"></i> Technology Parteners <br />
-        For Your Business
+
+  <br><br><br>
+  <br><br>
+  <div class="aboutus mt-md-5 mt-sm-2 d-lg-flex container-fluid d-sm-block d-md-block">
+    <img src="./assets/books.jpg" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine"
+      class="rounded-9 animate-left col-lg-5 col-sm-12 col-md-12" alt="AboutImage" height="550px" width="400px" />
+    <div data-aos="fade-left" data-aos-duration="2000"
+      class="info animate-right col-lg-6 col-sm-12 col-md-12 container-fluid mt-3">
+      <h5 class="rounded-7 text-center">About Us</h5>
+      <h2 class="fw-bold fs-1">
+        <i class="fa-solid fa-quote-left quotes"></i> Technology Partners <br />
+        &nbsp; &nbsp; For Your Business
       </h2>
-      <p>
+      <p class="p-lg-3 text-dark">
         Libcloud specializes in simplifying library management by providing
         experts setup and support for Koha, a complex yet powerful library
-        software.We ensure seamless integration and tailored solutions.
-        empowering libraries to focus on what matters most serving their
-        communities
+        software. We ensure seamless integration and tailored solutions,
+        empowering libraries to focus on what matters most: serving their
+        communities.
       </p>
-
-      <button type="button" class="btn btn-outline-primary">Read More</button>
+      <button type="button" class="btn btn-outline-primary rounded-3 readmore text-dark">Read More</button>
     </div>
   </div>
 
-  <h2 class="chooselibcloud">
+
+  <h2 class="chooselibcloud text-center mt-2 mb-5 fw-bold mt-5">
     Why Choose <span class="quotelibcloud">Libcloud</span> ?
   </h2>
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
+        <div class="card border rounded shadow-lg">
           <img src="./assets/img1.jpg" class="card-img-top" alt="Image 1" height="300px" />
           <div class="card-body">
             <h5 class="card-title">Title 1</h5>
@@ -134,7 +152,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card border rounded shadow-lg">
           <img src="./assets/img2.jpg" height="300px" class="card-img-top" alt="Image 2" />
           <div class="card-body">
             <h5 class="card-title">Title 2</h5>
@@ -148,7 +166,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card border rounded shadow-lg">
           <img src="./assets/img1.jpg" class="card-img-top" alt="Image 3" height="300px" />
           <div class="card-body">
             <h5 class="card-title">Title 3</h5>
@@ -164,39 +182,37 @@
     </div>
   </div>
 
-  <div class="ourservices">
-    <h2>Our <span class="quotelibcloud">Services</span></h2>
-    <div class="container" id="services">
+  <div class="ourservices m-auto text-center pb-5 ">
+    <h2 class="pt-5 fw-bold">Our <span class="quotelibcloud">Services</span></h2>
+    <div class="container mt-5 " id="services">
       <div class="row">
-        <div class="col-md-5">
-          <div class="card">
+        <div class="col-md-5 col-lg-6">
+          <div class="card border rounded shadow-lg">
             <img src="assets/service1.jpg" class="card-img-top" alt="Image 1" />
             <div class="card-body">
-              <h5 class="card-title">Title 1</h5>
+              <h5 class="card-title fw-bold">Hosted Koha LMS on cloud</h5>
               <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
-                error. Eius in numquam dolore asperiores similique maiores
-                doloribus unde et maxime vero ducimus molestiae earum
-                laboriosam ex, atque
+                We offer hassle free ready to use cloud-based services for koha library management software which is an
+                open-source software. Our cost effective solutions provides you all the benefits of a full featured,
+                secure, professionally managed robust Koha LMS which helps you to run your library smoothly.
               </p>
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-outline-primary text-dark rounded-7 readmore">
                 Read More
               </button>
             </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="card">
+        <div class="col-md-5 col-lg-6">
+          <div class="card border rounded shadow-lg">
             <img src="assets/service2.jpg" class="card-img-top" alt="Image 2" />
             <div class="card-body">
-              <h5 class="card-title">Title 2</h5>
+              <h5 class="card-title fw-bold">Mobile Application for koha LMS</h5>
               <p class="card-text">
-                CLorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Est, error. Eius in numquam dolore asperiores similique
-                maiores doloribus unde et maxime vero ducimus molestiae earum
-                laboriosam ex, atque
+                We offer a cross platform mobile application for koha LMS. We have developed a version independent
+                application to enhance library services for the libraries who are using koha LMS. <br>
+                This application gives a seamless experience to the library users and the library.
               </p>
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-outline-primary text-dark rounded-7 readmore">
                 Read More
               </button>
             </div>
@@ -206,17 +222,17 @@
     </div>
   </div>
 
-  <div class="banner">
-    <img src="./assets/logo.png" height="70px" width="150px" />
+  <div class="banner ps-5  p-5">
+    <img src="./assets/logo.png" height="70px" width="150px" class="pt-2" />
     <h2><strong>
         Your Koha Implementation <br />
         Specialists, Making Libraries <br> Thrive !</strong>
     </h2>
-    <button class="contactus">Contact Us</button>
+    <button class="contactus btn btn-lg px-3 text-white fw-bold rounded-pill">Contact Us</button>
   </div>
 
   <div class="testimonals" id="testimonals">
-    <h2>People That<span class="quotelibcloud"> Love Us</span></h2>
+    <h2 class="text-center mt-5 fw-bold">People That<span class="quotelibcloud"> Love Us</span></h2>
     <div>
       <section class="gradient-custom">
         <div class="container my-2 py-2">
@@ -226,7 +242,7 @@
                 <i class="fas fa-quote-left fa-3x text-white"></i>
               </div>
 
-              <div class="card">
+              <div class="card border rounded shadow-lg">
                 <div class="card-body px-4 py-5">
                   <div id="carouselDarkVariant" data-mdb-carousel-init class="carousel slide carousel-dark"
                     data-mdb-ride="carousel">
@@ -354,43 +370,49 @@
     </div>
   </div>
 
-  <div class="clients">
-    <h2>Our<span class="quotelibcloud"> Clients</span></h2>
-    <img class="company" src="https://libcloud.in/wp-content/uploads/2023/11/Nautilus-logo.png" alt="" srcset="" />
-    <img class="company" src="https://libcloud.in/wp-content/uploads/2023/11/Lord-logo.png" alt="" srcset="" />
-    <img class="company" src="https://libcloud.in/wp-content/uploads/2023/11/MW-gray-logo-1024x142-1.jpg" alt=""
-      srcset="" />
-    <img class="company" src="https://libcloud.in/wp-content/uploads/2023/11/Mars-logo.png" alt="" srcset="" />
-    <img class="company" src="https://libcloud.in/wp-content/uploads/2023/11/Canon-logo.png" alt="" srcset="" />
-    <img class="company" src="https://libcloud.in/wp-content/uploads/2023/11/Abbott-Laboratories-logo.png" alt=""
-      srcset="" />
+  <div class="clients text-center pl-3 mb-3">
+    <h2 class="text-center fw-bold">Our<span class="quotelibcloud"> Clients</span></h2>
+    <img class="company pl-3 m-2 pb-1" src="https://libcloud.in/wp-content/uploads/2023/11/Nautilus-logo.png" alt=""
+      srcset="" height="30px" width="100px" />
+    <img class="company pl-3 m-2 pb-1" src="https://libcloud.in/wp-content/uploads/2023/11/Lord-logo.png" alt=""
+      srcset="" height="30px" width="100px" />
+    <img class="company pl-3 m-2 pb-1" src="https://libcloud.in/wp-content/uploads/2023/11/MW-gray-logo-1024x142-1.jpg"
+      alt="" srcset="" height="30px" width="100px" />
+    <img class="company pl-3 m-2 pb-1" src="https://libcloud.in/wp-content/uploads/2023/11/Mars-logo.png" alt=""
+      srcset="" height="30px" width="100px" />
+    <img class="company pl-3 m-2 pb-1" src="https://libcloud.in/wp-content/uploads/2023/11/Canon-logo.png" alt=""
+      srcset="" height="30px" width="100px" />
+    <img class="company pl-3 m-2 pb-1" src="https://libcloud.in/wp-content/uploads/2023/11/Abbott-Laboratories-logo.png"
+      alt="" srcset="" height="30px" width="100px" />
   </div>
 
-  <div class="end">
+  <div class="end text-white">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <div class="card end">
+          <div class="card end text-white">
             <div class="card-body">
-              <h5 class="card-title"><img src="./assets/logo.png" height="70px" width="150px" /><br /></h5>
-              <p class="card-text">Libcloud Specialises in simplifuing library management by providing
+              <h5 class="card-title"><img src="./assets/logo.png" height="70px" width="150px"
+                  class="bg-white rounded-6 p-2" /><br /></h5>
+              <p class="card-text mt-4">Libcloud Specialises in simplifuing library management by providing
                 expert setup and support for Koha, a complex yet powerful library
                 software. We ensure seamless integration and tailored solutions,
                 emporing libraries to focus on what matters most seving therir
                 Communities.</p>
-              <ul>
-                <li class="icons"><i class="fa-brands fa-facebook"></i></li>
-                <li class="icons"><i class="fa-brands fa-twitter"></i></li>
-              </ul>
             </div>
+            <ul class="fs-4">
+              <li class="icons link-primary text-white d-inline-block p-3"><i class="fa-brands fa-facebook"></i></li>
+              <li class="icons link-primary text-white d-inline-block p-3"><i class="fa-brands fa-twitter"></i></li>
+            </ul>
           </div>
+
         </div>
         <div class="col-sm-3">
-          <div class="card end">
+          <div class="card end text-white">
             <div class="card-body">
-              <h3 class="card-title">LibCloud</h3>
+              <h3 class="card-title text-primary">LibCloud</h3>
               <p class="card-text">
-              <ul>
+              <ul class="list-unstyled">
                 <li>About Us</li>
                 <li>Contact Us</li>
                 <li>Business Associates</li>
@@ -401,11 +423,11 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="card end">
+          <div class="card end text-white">
             <div class="card-body">
-              <h3 class="card-title">Legal</h3>
+              <h3 class="card-title text-primary">Legal</h3>
               <p class="card-text">
-              <ul>
+              <ul class="list-unstyled">
                 <li>Terms of Service</li>
                 <li>Privacy Policy</li>
               </ul>
@@ -417,7 +439,7 @@
     </div>
   </div>
 
-  <div class="footer">All Rights Reserved &copy;Libcloud.in</div>
+  <div class="footer text-dark bg-light text-center m-auto p-auto">All Rights Reserved &copy;Libcloud.in</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -435,7 +457,11 @@
     integrity="sha384-ouZvXXLz5+rlyjWvl5z0Hsc8GaKpXzP2Pf7KzK6xXBO1qdzAQoq66qOBvwLcs4E5"
     crossorigin="anonymous"></script>
 
-  <script src="app.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
