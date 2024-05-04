@@ -2,19 +2,25 @@
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif !important;
 }
 .header, .end{
-  background-color: #03092e;
+  background-color: #2f244f;
+}
+.bgnav{
+  background-color: #f3ebf6;
 }
 .header ul li {
   padding-left: 70px;
   margin-right: 35px;
 }
-.quote {
+.quote, .chooselibcloud , .quotes{
   font-size: 60px;
 }
-.quotelibcloud, .quotes, .nav-item :hover,.navbar-nav .nav-link.active{
-  color: #ef1d7c
+.quotelibcloud, .quotes, .nav-item :hover,.navbar-nav .nav-link.active,.rating{
+  background: -webkit-linear-gradient(50deg, #2c7bf5, #ef1d7c) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: #ef1d7c;
 }
-.contactus ,.readmore:hover {
+.contactus ,.readmore:hover{
   background-image: linear-gradient(90deg,#2c7bf5,#ef1d7c) !important;
   color: white !important;
 }
@@ -25,14 +31,12 @@
   background-color: #9ac9e925;
   width: 125px;
 }
-.ourservices {
-  background-color: rgba(0, 0, 0, 0.075);
+.ourservices, .banner  {
+  background-color: #eff3fe;
 }
-.banner {
-  background-color: #cfcfcf;
-}
-.aboutus button,.ourservices button {
-  border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) 3; 
+.readmore,.ourservices button{
+  /* border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) 3;  */
+  border-color: #ef1d7c;
 }
 @media screen and (max-width: 915px) {
   .header ul li {
