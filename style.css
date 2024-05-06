@@ -1,42 +1,45 @@
-* , .contactus{
+*,.contactus {
   font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif !important;
 }
-.header, .end{
+.header,.end {
   background-color: #2f244f;
 }
-.bgnav{
+.bgnav {
   background-color: #f3ebf6;
 }
 .header ul li {
   padding-left: 70px;
   margin-right: 35px;
 }
-.quote, .chooselibcloud , .quotes{
+.quote,.chooselibcloud,.quotes {
   font-size: 60px;
 }
-.quotelibcloud, .quotes, .nav-item :hover,.navbar-nav .nav-link.active,.rating{
+.quotelibcloud,.quotes,.nav-item :hover,.navbar-nav .nav-link.active,.rating {
   background: -webkit-linear-gradient(50deg, #2c7bf5, #ef1d7c) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   color: #ef1d7c;
 }
-.contactus ,.readmore:hover{
-  background-image: linear-gradient(90deg,#2c7bf5,#ef1d7c) !important;
+.contactus,.readmore:hover,.contactus:hover {
+  background-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) !important;
   color: white !important;
 }
 .btnicons {
   background-color: rgba(85, 85, 223, 0.932);
- }
+}
 .aboutus h5 {
   background-color: #9ac9e925;
   width: 125px;
 }
-.ourservices, .banner  {
+.ourservices{
+  background: linear-gradient(to bottom, #eff3fe 0%, #eff3fe 60%, #ffffff 60%, #ffffff 100%);
+}
+.banner{
   background-color: #eff3fe;
 }
-.readmore,.ourservices button{
-  /* border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) 3;  */
-  border-color: #ef1d7c;
+.readmore,.ourservices button .contactus {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #2c7bf5, #ef1d7c) border-box;
+  border: 2px solid transparent;
 }
 @media screen and (max-width: 915px) {
   .header ul li {
@@ -47,15 +50,15 @@
     height: 40px;
     width: 100px;
   }
-  .quote {
+  .quote , .quotes {
     font-size: 35px;
   }
   .aboutus img {
     height: 340px;
-    width: 380px;
+    width: 410px;
   }
-  .aboutus .info{
-   padding-top: 30px;
+  .aboutus .info {
+    padding-top: 30px;
   }
   .clients img {
     padding: 7px;
@@ -64,4 +67,4 @@
   .infoicons {
     padding-left: 15px;
   }
-  }
+}
