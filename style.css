@@ -1,45 +1,74 @@
 *,.contactus {
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif !important;
+  font-family: "Red Hat Display", sans-serif !important;
 }
 .header,.end {
   background-color: #2f244f;
 }
-.bgnav {
-  background-color: #f3ebf6;
+.bgnav ,.businessbackground, .quote{
+  background: linear-gradient(254.08deg, rgba(231, 33, 129, 0.1) -1.18%, rgba(186, 54, 156, 0.1) 33.55%, rgba(118, 87, 199, 0.1) 70.55%, rgba(57, 116, 237, 0.1) 100.98%);
 }
 .header ul li {
   padding-left: 70px;
   margin-right: 35px;
 }
-.quote,.chooselibcloud,.quotes {
+.quote{
+  height: 600px;
+}
+.quoteimg1{
+  top: 35%; 
+  right: 23%;
+}
+.quote,.chooselibcloud,.quotes, .associateheading, .quoteheading{
   font-size: 60px;
 }
-.quotelibcloud,.quotes,.nav-item :hover,.navbar-nav .nav-link.active,.rating {
+.quotelibcloud,.quotes,.nav-item :hover,.navbar-nav .nav-link.active{
   background: -webkit-linear-gradient(50deg, #2c7bf5, #ef1d7c) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  color: #ef1d7c;
 }
 .contactus,.readmore:hover,.contactus:hover {
   background-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) !important;
   color: white !important;
 }
-.btnicons {
-  background-color: rgba(85, 85, 223, 0.932);
+.homecloudbg{
+  top: 2%; 
+  right: 18%;
 }
 .aboutus h5 {
   background-color: #9ac9e925;
   width: 125px;
 }
-.ourservices{
+.ourservices, .mobilescreens{
   background: linear-gradient(to bottom, #eff3fe 0%, #eff3fe 60%, #ffffff 60%, #ffffff 100%);
 }
 .banner{
   background-color: #eff3fe;
 }
-.readmore,.ourservices button .contactus {
+.readmore,.ourservices button .contactus, .mobilescreens .screenimg:hover {
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #2c7bf5, #ef1d7c) border-box;
   border: 2px solid transparent;
+}
+.faq, .macbookimg{
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #eff3fe 40%, #eff3fe 100%);
+}
+.cloudimages{
+  left: 500px;
+  top: 850px;
+}
+.aboutusvector{
+  right: -80px;
+  top: 150px;
+}
+.enlarge-img {
+  transition: transform 0.2s ease;
+}
+.enlarge-img:hover {
+  transform: scale(1.1);
+}
+.accordion-item.active {
+  border: 3px solid;
+  border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c);
+  border-image-slice: 1;
 }
 @media screen and (max-width: 915px) {
   .header ul li {
@@ -50,21 +79,109 @@
     height: 40px;
     width: 100px;
   }
-  .quote , .quotes {
+  .quote{
     font-size: 35px;
+    height: 500px;
   }
   .aboutus img {
     height: 340px;
-    width: 410px;
+    width: 427px;
+  }
+  #doublequote{
+    height: 30px;
+    width: 35px;
   }
   .aboutus .info {
     padding-top: 30px;
   }
-  .clients img {
-    padding: 7px;
-    margin-bottom: 35px;
+  .lmsknowledge .lmsimage{
+    width: 390px;
+    height: 350px;
   }
-  .infoicons {
-    padding-left: 15px;
+  .aboutusimage5{
+    height: 380px;
   }
+  .homecloudbg{
+    height: 200px;
+    width: 400px;
+    right: 5%;
+    top:60%;
+  }
+  .quoteimg1{
+    width: 300px;
+    left: 5%;
+    top: 74%;    
+  } }
+
+
+
+
+
+/* Not Useful CSS  */
+.image5{
+  right: 200px;
+  top: 340px;
 }
+.image1{
+  top: 410px;
+}
+.image2{
+  right: 60px;
+}
+.image3{
+  right: 250px;
+  top: 380px;
+}
+.image4{
+  right: 350px;
+  top: 85px;
+}
+.smallheadingcloud{
+  left: 500px;
+}
+.headingcloud{
+  top: 200px;
+  left: 200px;
+}
+.cloudvector{
+  right: 200px;
+  top: -280px;
+}
+.predefinedreportimg {
+  right: 300px;
+  top: 1690px;
+}
+.customopacimg {
+  left: 320px;
+  top:2000px;
+}
+.macbook{
+  left: 120px;
+}
+
+/* Not Useful CSS Media Query */
+@media screen and (max-width: 915px){
+.clients img {
+  padding: 7px;
+  margin-bottom: 35px;
+}
+.infoicons {
+  padding-left: 15px;
+}
+.resourceimg{
+  height:50px ;
+  width: 100px;
+}
+.serviceimg .image31{
+  height: 290px;
+  width: 200px;
+}
+.serviceimg .image32{
+  height: 200px;
+  width: 130px;
+}
+.serviceimg .headingcloud{
+  left: 0px;
+  height: 50px;
+  width: 90px;
+}}
