@@ -1,0 +1,32 @@
+<svg width="1210" height="982" viewBox="0 0 1210 982" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_0_1)">
+<path d="M206.087 586C174.596 584.16 143.536 582.688 112.045 580.848C98.2411 577.169 72.358 568.337 49.0632 548.099C9.37579 514.246 5.49332 471.193 5.06194 455.738C4.63055 444.331 5.49332 403.854 40.4355 366.689C48.2004 358.594 74.0835 331.364 121.104 320.325C182.793 305.974 233.265 330.26 243.186 335.412C242.324 325.477 242.324 311.126 244.481 294.199C247.5 272.857 252.677 236.06 284.168 201.47C314.365 167.985 352.758 154.738 363.543 151.426C429.976 130.084 489.076 149.954 502.88 155.106C503.312 145.539 505.468 131.924 511.508 116.101C529.626 72.6804 568.882 49.4983 587.863 38.4591C601.236 30.7317 631.864 13.4371 677.591 7.1816C737.985 -0.913767 784.574 15.6449 802.261 22.2684C819.517 28.5239 871.714 48.7623 907.951 98.8064C942.893 147.011 942.893 194.111 941.599 211.405C957.128 209.566 978.266 208.094 1003.29 210.302C1012.78 211.038 1044.27 214.349 1076.62 226.492C1151.68 254.826 1185.33 315.173 1186.63 318.117C1233.21 404.59 1177.13 487.016 1171.96 494.743C1162.04 508.726 1130.98 548.835 1070.58 571.281C1047.72 579.744 1026.58 583.424 1011.91 584.896C743.593 585.264 474.84 585.632 206.087 586Z" stroke="white" stroke-width="10" stroke-miterlimit="10"/>
+</g>
+<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="219" y="202" width="780" height="780">
+<rect opacity="0.4" x="580" y="563" width="58" height="58" rx="29" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="540" y="523" width="138" height="138" rx="69" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="500" y="483" width="218" height="218" rx="109" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="460" y="443" width="298" height="298" rx="149" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="420" y="403" width="378" height="378" rx="189" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="380" y="363" width="458" height="458" rx="229" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="340" y="323" width="538" height="538" rx="269" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="300" y="283" width="618" height="618" rx="309" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="260" y="243" width="698" height="698" rx="349" stroke="#F1EEF9" stroke-width="2"/>
+<rect opacity="0.4" x="220" y="203" width="778" height="778" rx="389" stroke="#F1EEF9" stroke-width="2"/>
+</mask>
+<g mask="url(#mask0_0_1)">
+<rect x="77" y="160" width="1067" height="425" fill="#BFC1FF"/>
+</g>
+<defs>
+<filter id="filter0_i_0_1" x="0" y="0" width="1210.01" height="595" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.443137 0 0 0 0 0.435294 0 0 0 0 1 0 0 0 0.47 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+</filter>
+</defs>
+</svg>
