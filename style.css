@@ -14,10 +14,6 @@
 .quote{
   height: 600px;
 }
-.quoteimg1{
-  top: 35%; 
-  right: 23%;
-}
 .quote,.chooselibcloud,.quotes, .associateheading, .quoteheading{
   font-size: 60px;
 }
@@ -29,10 +25,6 @@
 .contactus,.readmore:hover,.contactus:hover {
   background-image: linear-gradient(90deg, #2c7bf5, #ef1d7c) !important;
   color: white !important;
-}
-.homecloudbg{
-  top: 2%; 
-  right: 18%;
 }
 .aboutus h5 {
   background-color: #9ac9e925;
@@ -84,8 +76,8 @@
     height: 500px;
   }
   .aboutus img {
-    height: 340px;
-    width: 427px;
+    height: 290px;
+    width: 410px;
   }
   #doublequote{
     height: 30px;
@@ -96,24 +88,16 @@
   }
   .lmsknowledge .lmsimage{
     width: 390px;
-    height: 350px;
+    height: 300px;
   }
   .aboutusimage5{
-    height: 380px;
+    height: 300px;
   }
-  .homecloudbg{
-    height: 200px;
-    width: 400px;
-    right: 5%;
-    top:60%;
-  }
-  .quoteimg1{
-    width: 300px;
-    left: 5%;
-    top: 74%;    
-  } }
+}
 
 
+
+  
 
 
 
@@ -158,7 +142,14 @@
 .macbook{
   left: 120px;
 }
-
+.homecloudbg{
+  top: 2%; 
+  right: 18%;
+}
+.quoteimg1{
+  top: 35%; 
+  right: 23%;
+}
 /* Not Useful CSS Media Query */
 @media screen and (max-width: 915px){
 .clients img {
@@ -184,4 +175,15 @@
   left: 0px;
   height: 50px;
   width: 90px;
+}
+.homecloudbg{
+  height: 200px;
+  width: 400px;
+  right: 1%;
+  top:60%;
+}
+.quoteimg1{
+  width: 300px;
+  left: 5%;
+  top: 74%;    
 }}
