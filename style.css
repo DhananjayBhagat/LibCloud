@@ -1,18 +1,12 @@
-*,.contactus {
+html,body{
   font-family: "Red Hat Display", sans-serif !important;
+  overflow-x: hidden;
 }
 .header,.end {
   background-color: #2f244f;
 }
 .bgnav ,.businessbackground, .quote{
   background: linear-gradient(254.08deg, rgba(231, 33, 129, 0.1) -1.18%, rgba(186, 54, 156, 0.1) 33.55%, rgba(118, 87, 199, 0.1) 70.55%, rgba(57, 116, 237, 0.1) 100.98%);
-}
-.header ul li {
-  padding-left: 70px;
-  margin-right: 35px;
-}
-.quote{
-  height: 600px;
 }
 .quote,.chooselibcloud,.quotes, .associateheading, .quoteheading{
   font-size: 60px;
@@ -31,159 +25,109 @@
   width: 125px;
 }
 .ourservices, .mobilescreens{
-  background: linear-gradient(to bottom, #eff3fe 0%, #eff3fe 60%, #ffffff 60%, #ffffff 100%);
+  background: linear-gradient(to bottom, #eff3fe 0%, #eff3fe 62%, #ffffff 62%, #ffffff 100%);
 }
-.banner{
+.banner, .card1{
   background-color: #eff3fe;
 }
-.readmore,.ourservices button .contactus, .mobilescreens .screenimg:hover {
+.readmore,.ourservices button .contactus ,.form-control.active {
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #2c7bf5, #ef1d7c) border-box;
   border: 2px solid transparent;
 }
 .faq, .macbookimg{
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #eff3fe 40%, #eff3fe 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 45%, #eff3fe 45%, #eff3fe 100%);
 }
 .cloudimages{
-  left: 500px;
-  top: 850px;
+  left: 12vw;
+  top: 0px;
 }
 .aboutusvector{
-  right: -80px;
-  top: 150px;
+  right: 0vw;
+  top: 20vh;
 }
-.enlarge-img {
+.enlarge-img,.enlarge-img2 {
   transition: transform 0.2s ease;
 }
-.enlarge-img:hover {
+.enlarge-img, .enlarge-img2:hover {
   transform: scale(1.1);
 }
 .accordion-item.active {
-  border: 3px solid;
+  border: 1px solid;
   border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c);
   border-image-slice: 1;
+}
+.predefinedreportimg {
+  right: 15vw;
+}
+.customopacimg {
+  left: 17vw;
+  top:22vh;
+}
+.arrowvector{
+  right: 10vw;
+  bottom: 0vh;
+}
+.card1, .accordion-button{
+background-color: #fde9f241;
+}
+.card2{
+  background-color: #ebf1fd71;
+}
+.enlarge-img2:hover{
+  content: url('./assets/Frame\ 1171275474.svg');
+}
+.accordion-button::after{
+  background-image: url("./assets/Group\ 1171275448\(1\).svg") !important; 
+  transform: scale(2.0);
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url("./assets/Group\ 1171275448.svg") !important;  
+  transform: scale(1.5);
+}
+#cardshadow{
+  box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3)
+}
+#homecards{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 @media screen and (max-width: 915px) {
   .header ul li {
     font-size: 10px;
-    padding: 0px;
   }
   .companylogo img {
-    height: 40px;
-    width: 100px;
+    width: 30vw;
+    height: 7vh;
   }
-  .quote{
-    font-size: 35px;
-    height: 500px;
-  }
-  .aboutus img {
-    height: 290px;
-    width: 410px;
+  .quote, .serviceinfo .kohalms, .mobileapp{
+    font-size: 35px !important;
   }
   #doublequote{
-    height: 30px;
-    width: 35px;
+      width: 35px;
   }
   .aboutus .info {
     padding-top: 30px;
   }
-  .lmsknowledge .lmsimage{
-    width: 390px;
-    height: 300px;
+  .image31{
+    width: 90vw;
   }
-  .aboutusimage5{
-    height: 300px;
-  }
-}
-
-
-
-  
-
-
-
-/* Not Useful CSS  */
-.image5{
-  right: 200px;
-  top: 340px;
-}
-.image1{
-  top: 410px;
-}
-.image2{
-  right: 60px;
-}
-.image3{
-  right: 250px;
-  top: 380px;
-}
-.image4{
-  right: 350px;
-  top: 85px;
-}
-.smallheadingcloud{
-  left: 500px;
-}
-.headingcloud{
-  top: 200px;
-  left: 200px;
-}
-.cloudvector{
-  right: 200px;
-  top: -280px;
-}
-.predefinedreportimg {
-  right: 300px;
-  top: 1690px;
-}
-.customopacimg {
-  left: 320px;
-  top:2000px;
-}
-.macbook{
-  left: 120px;
-}
-.homecloudbg{
-  top: 2%; 
-  right: 18%;
-}
-.quoteimg1{
-  top: 35%; 
-  right: 23%;
-}
-/* Not Useful CSS Media Query */
-@media screen and (max-width: 915px){
-.clients img {
-  padding: 7px;
-  margin-bottom: 35px;
-}
-.infoicons {
-  padding-left: 15px;
-}
-.resourceimg{
-  height:50px ;
+ .smallheadingcloud{
+  height: 100px;
   width: 100px;
 }
-.serviceimg .image31{
-  height: 290px;
-  width: 200px;
-}
-.serviceimg .image32{
-  height: 200px;
-  width: 130px;
-}
-.serviceimg .headingcloud{
-  left: 0px;
+.headingcloud{
   height: 50px;
-  width: 90px;
 }
-.homecloudbg{
-  height: 200px;
-  width: 400px;
-  right: 1%;
-  top:60%;
-}
-.quoteimg1{
-  width: 300px;
-  left: 5%;
-  top: 74%;    
-}}
+  /* .macbook{
+    width: 80vw;
+    height: 100vh;
+    left: 0vw;
+  } */
+  /* .customopacimg{
+  width: 50vw;
+  height: 100vh;
+  left: 1vw;
+  } */
+  /* .predefinedreportimg{
+    width: 50vw;
+    height: 100vh;
+  } */}

@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Mobile Application</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,23 +22,25 @@
 
 <body>
     <div class="header text-white">
-        <ul class="d-flex justify-content-end align-items-center p-1 mb-0">
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-regular fa-envelope px-1"></i>
+        <ul class="d-flex justify-content-lg-end  p-1 mb-0 mx-5 px-lg-4 justify-content-between">
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i
+                    class="fa-regular fa-envelope px-1"></i>
                 business@libcloud.in</li>
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-solid fa-phone px-1"></i> +91
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i
+                    class="fa-solid fa-phone px-1"></i> +91
                 28639465
             </li>
-            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-facebook"></i></li>
-            <li class="list-unstyled link-primary text-white cursor-pointer p-0 mr-0"><i
-                    class="fa-brands fa-twitter"></i>
-            </li>
+            <li class="list-unstyled link-primary text-white cursor-pointer mx-3  "><i
+                    class="fa-brands fa-facebook"></i></li>
+            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-twitter"></i></li>
         </ul>
     </div>
 
 
-    <nav class="navbar navbar-expand-lg bgnav border border-dark">
+
+    <nav class="navbar  navbar-expand-lg bgnav border sticky-top z-10 bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand companylogo ms-lg-5" href="#"><img src="./assets/logo.png" height="70px"
+            <a class="navbar-brand companylogo ms-lg-5  px-lg-5" href="./index.html"><img src="./assets/logo.png" height="70px"
                     width="150px" id="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,37 +51,41 @@
                     <li id="home" class="nav-item ms-lg-4 me-lg-3 ">
                         <a class="nav-link  pt-4" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li id="Services" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link active pt-4" href="./services.html">Services</a>
-                    </li>
+                    <!-- <li id="Services" class="nav-item  ms-lg-4 me-lg-3 fw-bolder">
+                        <a class="nav-link active pt-4 fw-bolder " href="./services.html">Services</a>
+                    </li> -->
+                    <li id="Services" class="nav-item dropdown ms-lg-4 me-lg-3 fw-bolder">
+                        <a class="nav-link dropdown-toggle pt-4 fw-bolder active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./services.html">Benefits</a>
+                          <a class="dropdown-item" href="./mobileapp.html">Features</a>
+                      </li>
                     <li id="Business" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link pt-4" href="./businessassociates.html">Business Associates</a>
+                        <a class="nav-link pt-4" href="#">Business Associates</a>
                     </li>
                     <li id="Contact" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./contactus.html">Contact Us</a>
                     </li>
-                    <li id="Resources" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link pt-4" href="./resources.html">Resources</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
 
-
+    <!--     
     <div class="container mt-lg-5 d-lg-flex ml-0 pl-0 mt-5">
-        <div class="serviceimg col-lg-7 col-12 d-flex d-lg-block m-auto p-auto mx-4 mx-lg-0">
-            <img src="./assets/whitecloud.png" alt="" srcset="" class="headingcloud position-absolute mt-lg-0">
-            <img class="mt-lg-2 image31 " src="./assets/image 3.png" height="480px" width="338px" alt="Image" srcset="">
-            <img src="./assets/whitecloud.png" alt="" srcset="" class="smallheadingcloud position-absolute mt-lg-0 mt-0 top-50">
-
-            <img class="mt-lg-5 pl-5 mx-3 image32 mt-5" src="./assets/image 3.png" height="350px" width="192.71px" alt="Image"
-                srcset="">
-
-
+        <div class="serviceimg col-lg-6 m-lg-auto d-flex mx-lg-4 container">
+            <img src="./assets/whitecloud.png" alt="" srcset="" class="headingcloud position-absolute mt-lg-3">
+            <img class="mt-lg-2 image31 " src="./assets/Frame 1171275491.svg" alt="Image" srcset="">
+            <img src="./assets/whitecloud.png" alt="" srcset=""
+                class="smallheadingcloud position-absolute  mt-lg-0 mt-0">
         </div>
-        <div class="serviceinfo col-lg-4 col-sm-12 col-md-12 container-fluid mt-3 mt-lg-5 pt-lg-5  mx-lg-5">
+
+        <div data-aos="fade-left" data-aos-duration="1500"
+            class="serviceinfo col-lg-6 col-sm-12 col-md-12 container-fluid mt-3 mt-lg-5 pt-lg-5  mx-lg-5 ml-lg-0 pl-lg-0">
             <h1 class="fw-bold text-dark">
                 Hosted Koha LMS <br>
                 <span class="quotelibcloud">On Cloud</span>
@@ -85,28 +95,68 @@
                 for libraries of all sizes. Our ready-to-use Koha packages streamline the setup process, providing
                 libraries with a comprehensive solution for cataloging, circulation, patron management, and more.
             </p>
-            <button class="contactus btn btn-lg px-3 text-white fw-bold rounded-pill px-4">Contact Us</button>
+            <div class="container-fluid align-items-center col-8 col-lg-12 mt-4 mx-lg-0 px-lg-0">
+                <a href="./contactus.html">
+                    <button class="contactus btn btn-lg  text-white fw-bold rounded-pill px-4 mx-4">Contact
+                        Us</button></a>
+            </div>
+
+        </div>
+    </div> -->
+
+
+    <div class="container-fluid mt-lg-5 d-lg-flex ml-0 pl-0 mt-5">
+        <div class="serviceimg col-lg-4  d-flex container-fluid ml-lg-5 pl-lg-5  position-relative justify-content-start">
+        <img src="./assets/whitecloud.png" alt="" data-aos="fade-right" data-aos-duration="3000"
+                class="headingcloud position-absolute top-0 start-n5 mx-lg-n5  mt-lg-3 mt-lg-5 pt-2">
+            <img class="mt-lg-2 mx-lg-5 px-lg-1 image31" src="./assets/Frame 1171275491.svg" alt="Image" >
+            <img src="./assets/whitecloud.png" alt="" data-aos="fade-left" data-aos-duration="3000"
+                class="smallheadingcloud position-absolute top-50 mt-5 pb-5 start-50 mx-lg-3 mx-lg-2 ">
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="1500"
+            class="serviceinfo col-lg-6 col-sm-12 col-md-12 container-fluid mt-3 mt-lg-5 pt-lg-5  mx-lg-5 ml-lg-0 pl-lg-0">
+
+            <h1 class="fw-bold text-dark kohalms" style="font-size: 55px;">
+                Hosted Koha LMS <br>
+                <span class="quotelibcloud">On Cloud</span>
+            </h1>
+            <p class="text-dark col-lg-10 pt-lg-2 fs-5" style="  line-height: normal;">
+
+                At Libcloud, wwe offer turnkey solutions with Koha, an open-source library management software tailored
+                for libraries of all sizes. Our ready-to-use Koha packages streamline the setup process, providing
+                libraries with a comprehensive solution for cataloging, circulation, patron management, and more.
+            </p>
+            <div class="container align-items-center col-8 col-lg-12 mt-4 mx-lg-0 px-lg-0">
+                <a href="./contactus.html">
+                    <button class="contactus btn btn-lg  text-white fw-bold rounded-7 px-4 mx-4 mx-lg-0">Contact
+                        Us</button></a>
+            </div>
         </div>
     </div>
+
     <br>
 
-    <div class="benefits mt-lg-5 m-auto p-auto">
-        <div class="head bgnav">
+    <div class="benefits bgnav mt-lg-5 m-auto p-auto px-lg-5">
+        <div class="head container-fluid mx-lg-5 ">
 
-            <h2 class="text-dark fs-1 fw-bold align-items-center px-lg-3 p-3 m-auto mx-5 mt-5">
+            <h2
+                class="text-dark fs-lg-1 fw-bold align-items-center px-lg-3 p-lg-3 m-auto mx-5 mt-5 text-center text-lg-start py-lg-3 py-4">
                 Benefits of Hosted Koha LMS
             </h2>
         </div>
-
     </div>
-    <div class="container-fluid mt-lg-3 mx-lg-5">
-        <div class="row mt-lg-5 px-lg-5">
+
+
+
+    <div class="container-fluid mt-lg-3 mx-lg-5 px-lg-5 px-4">
+        <div class="row mt-lg-5 px-lg-5" style="  line-height: normal;">
             <div class="col-lg-3 col-md-6 mb-lg-4 ">
                 <div class="card shadow-none">
                     <div class="card-body">
                         <h5 class="card-title">01</h5>
                         <h5 class="card-title">Cost Effective</h5>
-                        <p class="card-text">Budget-friendly hosted Koha LMS solution saves you money upfront and
+                        <p class="card-text fs-5">Budget-friendly hosted Koha LMS solution saves you money upfront and
                             over time.</p>
                     </div>
                 </div>
@@ -116,7 +166,7 @@
                     <div class="card-body">
                         <h5 class="card-title">02</h5>
                         <h5 class="card-title">Pre-Defined Reports</h5>
-                        <p class="card-text">Gain insights effortlessly with a variety of built-in reports tailored
+                        <p class="card-text fs-5">Gain insights effortlessly with a variety of built-in reports tailored
                             to your library's needs.</p>
                     </div>
                 </div>
@@ -126,7 +176,7 @@
                     <div class="card-body">
                         <h5 class="card-title">03</h5>
                         <h5 class="card-title">Uninterrupted Access</h5>
-                        <p class="card-text">Enjoy flexible access to your library system from any location and
+                        <p class="card-text fs-5">Enjoy flexible access to your library system from any location and
                             device with internet connectivity.</p>
                     </div>
                 </div>
@@ -136,7 +186,7 @@
                     <div class="card-body">
                         <h5 class="card-title">04</h5>
                         <h5 class="card-title">Stay Up-To-Date</h5>
-                        <p class="card-text">Stay current with automatic updates, ensuring you have access to the
+                        <p class="card-text fs-5">Stay current with automatic updates, ensuring you have access to the
                             latest features and security enhancements.</p>
                     </div>
                 </div>
@@ -146,7 +196,7 @@
                     <div class="card-body">
                         <h5 class="card-title">05</h5>
                         <h5 class="card-title">Custom OPAC</h5>
-                        <p class="card-text">Personalize your online catalog with a custom OPAC featuring your
+                        <p class="card-text fs-5">Personalize your online catalog with a custom OPAC featuring your
                             institution's logo and name.</p>
                     </div>
                 </div>
@@ -156,7 +206,7 @@
                     <div class="card-body">
                         <h5 class="card-title">06</h5>
                         <h5 class="card-title">Scalable & Accessible</h5>
-                        <p class="card-text">Scale your library system effortlessly as your institution grows while
+                        <p class="card-text fs-5">Scale your library system effortlessly as your institution grows while
                             ensuring accessiblity for all users.</p>
                     </div>
                 </div>
@@ -166,7 +216,7 @@
                     <div class="card-body">
                         <h5 class="card-title">07</h5>
                         <h5 class="card-title">Guaranteed Services</h5>
-                        <p class="card-text">Rest assured with reliable services and regular backups to secure your
+                        <p class="card-text fs-5">Rest assured with reliable services and regular backups to secure your
                             data.</p>
                     </div>
                 </div>
@@ -176,7 +226,7 @@
                     <div class="card-body">
                         <h5 class="card-title">08</h5>
                         <h5 class="card-title">No IT Infrastructure</h5>
-                        <p class="card-text">Simplify operations with no need for complex IT Infrastructure or
+                        <p class="card-text fs-5">Simplify operations with no need for complex IT Infrastructure or
                             maintainance.</p>
                     </div>
                 </div>
@@ -186,7 +236,7 @@
                     <div class="card-body">
                         <h5 class="card-title">09</h5>
                         <h5 class="card-title">Access TO Mobile App</h5>
-                        <p class="card-text">Personalize your online catalog with a custom OPAC featuring your
+                        <p class="card-text fs-5">Personalize your online catalog with a custom OPAC featuring your
                             institution's logo and name.</p>
                     </div>
                 </div>
@@ -196,29 +246,54 @@
                     <div class="card-body">
                         <h5 class="card-title">10</h5>
                         <h5 class="card-title">Scalable & Accessible</h5>
-                        <p class="card-text">Scale your library system effortlessly as your institution grows while
+                        <p class="card-text fs-5">Scale your library system effortlessly as your institution grows while
                             ensuring accessiblity for all users.</p>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     </div>
 
-    <div class="macbookimg pb-5">
-        <div class=" d-flex mt-1 pt-5 container pb-5 mb-5">
+    <!-- Desktop View of Macbook  -->
 
-            <img src="./assets/MacBook Pro 16.png" width="1101" height="687px" alt="" srcset=""
-                class="macbook position-relative z-0">
-            <img src="./assets/Group 1171275423.png" width="364px" height="185px" alt="" srcset=""
-                class="customopacimg mt-lg-5 position-absolute">
-            <img src="./assets/Vector.png" alt="" class="cloudvector position-relative z-n1" width="553px" height="268px"
-                alt="" srcset="">
 
-            <img src="./assets/Group 1171275424.png" width="250px" height="314px" alt="" srcset=""
-                class="predefinedreportimg mx-5 position-absolute">
+    <div class="macbookimg pb-5 col-lg-12 col-12 d-none d-lg-block position-relative rounded-9">
+        <img src="./assets/Vector.svg" alt=""
+            class="img-fluid cloudvector position-absolute end-0 mx-5 px-5 translate-middle-y" alt="" srcset="">
+        <div class=" d-flex mt-1 pt-5  pb-5 mb-5  ">
+
+            <img src="./assets/Group 1171275423.svg" alt="" srcset=""
+                class="customopacimg mt-lg-5 position-relative z-1" data-aos="fade-right" data-aos-duration="3000">
+            <img src="./assets/MacBook Pro 16.svg" alt="" srcset="" class="macbook  z-0">
+            <img src="./assets/Group 1171275457.svg" alt="" srcset="" class="predefinedreportimg position-relative z-2"
+                data-aos="fade-left" data-aos-duration="3000">
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile View of Mackbook -->
+
+
+    <div class="container d-lg-none px-auto mx-auto mt-5 mb-5 pb-3 position-relative pt-5">
+        <div class="container d-flex position-relative">
+            <img src="./assets/Group 1171275423.svg" alt=""
+                class="img-fluid position-absolute bottom-n5 start-0 z-2 mt-3" height="100px" width="150px"
+                data-aos="fade-right" data-aos-duration="1500">
+            <img src="./assets/MacBook Pro 16.svg" alt=""
+                class="img-fluid position-absolute top-50 start-50 translate-middle z-1" width="350px">
+            <img src="./assets/Group 1171275457.svg" alt=""
+                class="img-fluid position-absolute top-5 bottom-0 mb-n4 end-0 z-2 " height="100px" width="150px"
+                data-aos="fade-left" data-aos-duration="1500">
+        </div>
+        <div class="container d-block mb-5 pb-5">
+            <p></p>
         </div>
     </div>
+
 
 
     <div class="end text-white pt-5">
@@ -252,8 +327,12 @@
                             <h3 class="card-title text-primary">LibCloud</h3>
                             <p class="card-text">
                             <ul class="list-unstyled">
-                                <li>About Us</li>
-                                <li>Contact Us</li>
+                                <li>
+                                    <a href="./aboutus.html" class="text-white">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="./contactus.html" class="text-white">Contact Us</a>
+                                </li>
                                 <li>Business Associates</li>
                                 <li>FAQ's</li>
                             </ul>
@@ -295,5 +374,12 @@
         integrity="sha384-ouZvXXLz5+rlyjWvl5z0Hsc8GaKpXzP2Pf7KzK6xXBO1qdzAQoq66qOBvwLcs4E5"
         crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
+
 </html>

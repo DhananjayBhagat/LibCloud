@@ -23,25 +23,23 @@
 </head>
 
 <body>
-
     <div class="header text-white">
-        <ul class="d-flex justify-content-end align-items-center p-1 mb-0">
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-regular fa-envelope px-1"></i>
+        <ul class="d-flex justify-content-lg-end  p-1 mb-0 mx-5 px-lg-4 justify-content-between">
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i class="fa-regular fa-envelope px-1"></i>
                 business@libcloud.in</li>
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-solid fa-phone px-1"></i> +91
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i class="fa-solid fa-phone px-1"></i> +91
                 28639465
             </li>
-            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-facebook"></i></li>
-            <li class="list-unstyled link-primary text-white cursor-pointer p-0 mr-0"><i
-                    class="fa-brands fa-twitter"></i>
-            </li>
+            <li class="list-unstyled link-primary text-white cursor-pointer mx-3  "><i class="fa-brands fa-facebook"></i></li>
+            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-twitter"></i></li>
         </ul>
     </div>
 
-    <nav class="navbar navbar-expand-lg bgnav border border-dark">
+
+    <nav class="navbar navbar-expand-lg bgnav border sticky-top z-10 bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand companylogo ms-lg-5" href="#"><img src="./assets/logo.png" height="70px"
-                    width="150px" id="logo" /></a>
+            <a class="navbar-brand companylogo ms-lg-5 px-lg-5" href="./index.html"><img src="./assets/logo.png" height="70px"
+                width="150px" id="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,18 +49,24 @@
                     <li id="home" class="nav-item ms-lg-4 me-lg-3 ">
                         <a class="nav-link  pt-4" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li id="Services" class="nav-item ms-lg-4 me-lg-3">
+                    <!-- <li id="Services" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./services.html">Services</a>
-                    </li>
+                    </li> -->
+                    <li id="Services" class="nav-item dropdown ms-lg-4 me-lg-3">
+                        <a class="nav-link dropdown-toggle pt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./services.html">Benefits</a>
+                          <a class="dropdown-item" href="./mobileapp.html">Features</a>
+                      </li>
                     <li id="Business" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./businessassociates.html">Business Associates</a>
                     </li>
-                    <li id="Contact" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link active pt-4" href="./contactus.html">Contact Us</a>
+                    <li id="Contact" class="nav-item ms-lg-4 me-lg-3 fw-bolder">
+                        <a class="nav-link active pt-4 fw-bolder" href="./contactus.html">Contact Us</a>
                     </li>
-                    <li id="Resources" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link pt-4" href="./resources.html">Resources</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -75,7 +79,7 @@
         <p class="m-auto text-dark">Any Questions or Remarks ? Just Write Us a message</p>
     </div>
 
-    <div class="container d-lg-flex mt-lg-5 px-0 mb-5  rounded shadow-lg rounded-9 mt-5 ">
+    <div class="container d-lg-flex mt-lg-5 px-0 mb-5  rounded shadow-md shadow-bottom shadow-dark rounded-9 mt-5 " id="cardshadow">
         <div class="contactinfo col-lg-5 bgnav rounded-9 container  position-relative">
             <div class="px-lg-5 pt-lg-5 pt-5 p-5 text-dark">
                 <h2>Contact Information</h2>
@@ -95,6 +99,12 @@
                 </ul>
 
             </div><br> <br>
+            <div class="cloudimages position-relative d-lg-flex d-none ">
+                <img src="./assets/Vector.png" alt="" srcset="" height="80px" width="165px" class="contactvector1 ">
+                <img src="./assets/Vector.png" alt="" srcset="" height="114px" width="235px" class="contactvector2 ">
+               
+            </div>
+        
             <ul class="mt-lg-5 pt-5 d-flex p-2 align-self-end position-absolute mx-lg-5 fs-5 bottom-0 mx-5 ">
                 <li class="icons link-primary text-dark list-unstyled"><i class="fa-brands fa-facebook"></i></li>
                 <li class="icons link-primary text-dark  list-unstyled px-3"><i class="fa-brands fa-twitter"></i>
@@ -103,35 +113,35 @@
 
 
         </div>
-        <div class="contactform col-lg-7 container px-5 text-dark mb-5 pb-5">
+        <div class="contactform col-lg-7 container px-5 text-dark mb-5 pb-5 z-1">
             <form>
                 <div class="row pt-5">
                     <div class="col">
                         <label for="firstname">First Name</label>
-                        <input type="text" class="form-control rounded-6" id="firstname"
+                        <input type="text" class="form-control rounded-5 border-1" id="firstname"
                             placeholder="Enter your First name">
                     </div>
                     <div class="col">
                         <label for="lastname">Last Name</label>
-                        <input type="text" class="form-control rounded-6" id="lastname"
+                        <input type="text" class="form-control rounded-5 border-1" id="lastname"
                             placeholder="Enter your Last name">
                     </div>
                 </div>
                 <div class="row pt-4">
                     <div class="col">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control rounded-6" id="title" placeholder="Text Input field">
+                        <input type="text" class="form-control rounded-5 border-1" id="title" placeholder="Text Input field">
                     </div>
                     <div class="col">
                         <label for="phoneno">Phone Number</label>
-                        <input type="text" class="form-control rounded-6" id="phoneno"
+                        <input type="text" class="form-control rounded-5 border-1" id="phoneno"
                             placeholder="Enter your phone number">
                     </div>
                 </div>
                 <div class="row pt-4">
                     <div class="col">
                         <label for="message">Message</label>
-                        <textarea name="message" class="form-control rounded-6 " id="message" rows="8"
+                        <textarea name="message" class="form-control rounded-5 border-1 " id="message" rows="8"
                             placeholder="Type a message..."></textarea>
                     </div>
                 </div>
@@ -139,92 +149,104 @@
                     <div class="col">
                         <button class="contactus btn btn-lg px-3 text-white fw-bold rounded-pill px-4">Send
                             Message</button>
+                            
                     </div>
-                </div>
-            </form>
+                </div>                
+            </form>          
         </div>
+
+        <!-- desktop view  -->
+        <div class="position-relative d-lg-flex d-none">
+            <img src="./assets/Group 1171275445.svg" alt="" srcset="" class="arrowvector position-absolute bottom-1 pt-4">    
+        </div> 
+
+        <!-- mobile view  -->
+        <div class="position-relative d-lg-none">
+            <img src="./assets/Group 1171275445.svg" alt="" srcset="" class="arrowvector position-absolute bottom-0 start-50 " width="80vw" height="150vh">    
+        </div> 
+        
+        
     </div>
-    <div class="cloudimages position-absolute d-lg-flex d-none ">
-        <img src="./assets/Vector.png" alt="" srcset="" height="80px" width="165px" class="contactvector1">
-        <img src="./assets/Vector.png" alt="" srcset="" height="114px" width="235px" class="contactvector2">
-    </div>
+  
 
 
 
-    <div class="faq mt-5 pt-5 mt-lg-0 pt-lg-0">
+
+    <div class="faq mt-5 pt-5 mt-lg-0 pt-lg-0 rounded-9">
         <div class="container text-center mt-lg-5 pt-lg-5 mt-5 ">
             <h1 class="fw-bold text-dark "><span class="quotelibcloud">Frequently Asked </span> Questions</h1>.
             <p>Contact Us anytime if you have anymore questions!</p>
         </div>
 
-        <div class="answers container mt-5 pb-5">
+        <div class="answers container mt-2 pb-5">
             <div class="accordion accordion-flush " id="accordionFlushExample">
-                <div class="accordion-item   mt-5  border-2 rounded-6  border-top">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What is an LMS?
+                          
+                <div class="accordion-item active   mt-5  border-2 rounded-6 border-top border-light">
+                    <h2 class="accordion-header " id="flush-headingOne" >
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           <h5> What is an LMS? </h5>   
+                                                
                         </button>
+                        
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">An LMS (Learning Management System) is a software platform designed
-                            to manage and deliver online learning and training materials.</div>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body"><h5> An LMS (Learning Management System) is a software platform designed
+                            to manage and deliver online learning and training materials.</h5></div>
                     </div>
                 </div>
-                <div class="accordion-item  mt-5  border-2 rounded-6">
+                <div class="accordion-item  mt-3  border-2 rounded-6" id="accordion">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            How do i log into the LMS?
+                            <h5> How do i log into the LMS?</h5>
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">An LMS (Learning Management System) is a software platform designed
-                            to manage and deliver online learning and training materials.</div>
+                        <div class="accordion-body"><h5>An LMS (Learning Management System) is a software platform designed
+                            to manage and deliver online learning and training materials.</h5></div>
                     </div>
                 </div>
-                <div class="accordion-item   mt-5  border-2 rounded-6">
+                <div class="accordion-item   mt-3  border-2 rounded-6">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            How do i access course materials?
+                          <h5> How do i access course materials? </h5> 
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">An LMS (Learning Management System) is a software platform designed
-                            to manage and deliver online learning and training materials.</div>
+                        <div class="accordion-body"><h5>An LMS (Learning Management System) is a software platform designed
+                            to manage and deliver online learning and training materials.</h5></div>
                     </div>
                 </div>
-                <div class="accordion-item   mt-5  border-2 rounded-6">
+                <div class="accordion-item   mt-3  border-2 rounded-6 border-top border-light" >
                     <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            What should i do if i encounter technical issues?
+                            aria-controls="flush-collapseFour" >
+                          <h5> What should i do if i encounter technical issues? </h5> 
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">An LMS (Learning Management System) is a software platform designed
-                            to manage and deliver online learning and training materials.</div>
+                        <div class="accordion-body"><h5>An LMS (Learning Management System) is a software platform designed
+                            to manage and deliver online learning and training materials.</h5></div>
                     </div>
                 </div>
-                <div class="accordion-item   mt-5  border-2 rounded-6  border-bottom">
+                <div class="accordion-item   mt-3  border-2 rounded-6  border-bottom">
                     <h2 class="accordion-header" id="flush-headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFive" aria-expanded="false"
                             aria-controls="flush-collapseFive">
-                            how do i submit assignments or quizzes?
+                       <h5>  how do i submit assignments or quizzes? </h5>   
                         </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">An LMS (Learning Management System) is a software platform designed
-                            to manage and deliver online learning and training materials.</div>
+                        <div class="accordion-body"><h5>An LMS (Learning Management System) is a software platform designed
+                            to manage and deliver online learning and training materials.</h5></div>
                     </div>
                 </div>
             </div>
@@ -232,10 +254,14 @@
     </div>
 
 
+
+    
+
+
     <div class="end text-white pt-lg-5 pt-0">
         <div class="container pt-4 pb-4">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-lg-6">
                     <div class="card end text-white border-0 shadow-none">
                         <div class="card-body">
                             <h5 class="card-title"><img src="./assets/logo.png" height="70px" width="150px"
@@ -251,7 +277,7 @@
                         <ul class="fs-4 m-0 p-0">
                             <li class="icons link-primary text-white d-inline-block p-3"><i
                                     class="fa-brands fa-facebook"></i></li>
-                            <li class="icons link-primary text-white d-inline-block p-3"><i
+                            <li class="icons link-primary text-white d-inline-block"><i
                                     class="fa-brands fa-twitter"></i></li>
                         </ul>
                     </div>
@@ -267,7 +293,7 @@
                                     <a href="./aboutus.html" class="text-white">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-white">Contact Us</a>
+                                    <a href="./contactus.html" class="text-white">Contact Us</a>
                                 </li>
                                 <li>Business Associates</li>
                                 <li>FAQ's</li>
@@ -295,6 +321,7 @@
     </div>
 
     <div class="footer text-dark bg-light text-center m-auto p-2">All rights reserved &copy;Libcloud.in</div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -325,6 +352,20 @@
             });
         });
     </script>
+    <script>
+        const input = document.querySelectorAll('.form-control');
+        input.forEach(item => {
+            item.addEventListener('click', () => {
+                input.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                item.classList.toggle('active');
+            });
+        });
+    </script>   
+    
 
 </body>
 

@@ -9,11 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,21 +22,23 @@
 
 <body>
     <div class="header text-white">
-        <ul class="d-flex justify-content-end align-items-center p-1 mb-0">
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-regular fa-envelope px-1"></i>
+        <ul class="d-flex justify-content-lg-end  p-1 mb-0 mx-5 px-lg-4 justify-content-between">
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i
+                    class="fa-regular fa-envelope px-1"></i>
                 business@libcloud.in</li>
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-solid fa-phone px-1"></i> +91
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i
+                    class="fa-solid fa-phone px-1"></i> +91
                 28639465
             </li>
-            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-facebook"></i></li>
-            <li class="list-unstyled link-primary text-white cursor-pointer p-0 mr-0"><i
-                    class="fa-brands fa-twitter"></i>
-            </li>
+            <li class="list-unstyled link-primary text-white cursor-pointer mx-3  "><i
+                    class="fa-brands fa-facebook"></i></li>
+            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-twitter"></i></li>
         </ul>
     </div>
-    <nav class="navbar navbar-expand-lg bgnav border border-dark">
+
+    <nav class="navbar navbar-expand-lg bgnav border sticky-top z-10 bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand companylogo ms-lg-5" href="#"><img src="./assets/logo.png" height="70px"
+            <a class="navbar-brand companylogo ms-lg-5  px-lg-5" href="./index.html"><img src="./assets/logo.png" height="70px"
                     width="150px" id="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,69 +46,89 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end pt-lg-4 px-lg-5" id="navbarNav">
                 <ul class="navbar-nav tags">
-                    <li id="home" class="nav-item ms-lg-4 me-lg-3 ">
-                        <a class="nav-link  pt-4" aria-current="page" href="./index.html">Home</a>
+                    <li id="home" class="nav-item ms-lg-4 me-lg-3  ">
+                        <a class="nav-link pt-4 " aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li id="Services" class="nav-item ms-lg-4 me-lg-3">
+                    <!-- <li id="Services" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./services.html">Services</a>
-                    </li>
+                    </li> -->
+                    <li id="Services" class="nav-item dropdown ms-lg-4 me-lg-3 fw-bolder">
+                        <a class="nav-link dropdown-toggle pt-4 fw-bolder active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./services.html">Benefits</a>
+                          <a class="dropdown-item" href="./mobileapp.html">Features</a>
+                      </li>
                     <li id="Business" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link  pt-4" href="./businessassociates.html">Business Associates</a>
                     </li>
                     <li id="Contact" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./contactus.html">Contact Us</a>
                     </li>
-                    <li id="Resources" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link pt-4" href="./resources.html">Resources</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    <div class="lmsknowledge mt-lg-5 pt-lg-5 d-flex  pt-5 ">
+    <div class="lmsknowledge mt-lg-5 pt-lg-5 d-flex  pt-5 pl-lg-5">
         <div class=" d-lg-flex">
-            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine" class=" col-lg-4 px-auto mx-auto container col-md-12 col-sm-12">
-                <h1 class="fw-bold mobileapp text-dark text-start col-12 " style="font-size: 50px;"><span class="quotelibcloud text-dark"> Mobile Application</span>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine"
+                class="container col-lg-5 px-auto mx-auto  col-md-12 col-sm-12 px-lg-2">
+                <h1 class="fw-bold mobileapp text-dark text-start col-12 " style="font-size: 60px;"><span
+                        class="quotelibcloud text-dark"> Mobile Application</span>
                     <br>
                     For Koha LMS
                 </h1>.
-                <p>
+                <p id="textfont " class="col-lg-10 fs-5" style="line-height: normal;">
                     Our mobile application for Koha LMS revolutionizes library management by harnessing the latest
                     technology for seamless accessibility and user engagement. With intuitive design and cutting-edge
                     features, users can effortlessly navigate through the library's catalogue, explore book details
                     complete with images, and check availability on-the-go. Designed with the latest technology, our
                     mobile app delivers a modern, efficient, and user-centric library experience.
                 </p>
-                <div class="container align-items-center col-5 col-lg-12">
-                <a href="./contactus.html"><button class="contactus btn btn-lg px-3 text-white fw-bold rounded-pill px-4 mt-2">Contact Us</button></a>
+                <div class="container align-items-center col-6 col-lg-12">
+                    <a href="./contactus.html"><button
+                            class="contactus btn btn-lg px-4  text-white fw-bold rounded-7 px-4 mt-2">Contact
+                            Us</button></a>
+                </div>
             </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="2000" class="mr-lg-0 pr-lg-0 mx-0 px-0 col-sm-12 col-md-12 mt-5 mt-lg-0 text-lg-end text-center col-lg-5">
+            <div data-aos="fade-left" data-aos-duration="2000"
+                class="mr-lg-0 pr-lg-0 mx-0 px-0 col-sm-12 col-md-12 mt-5 mt-lg-0 text-lg-end text-center col-lg-5 d-lg-block d-none">
                 <div class="">
-                    <img src="./assets/mobilepageimg.png" alt="" height="480px" width="732px" class="lmsimage rounded-9">
+                    <img src="./assets/mobilepageimg.png" alt="" height="480px" width="100%"
+                        class="lmsimage">
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2000"
+                class="container  col-sm-12 col-md-12 mt-5  text-cente d-lg-none justify-content-center">
+                <div class="">
+                    <img src="./assets/mobilepageimg.png" alt="" height="" width="100%"
+                        class="lmsimage rounded-9">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="benefits bgnav mt-lg-5 m-auto p-auto">
+    <div class="benefits bgnav mt-lg-5 m-auto p-auto px-lg-5">
         <div class="head container-fluid mx-lg-5 ">
 
-            <h2 class="text-dark fs-lg-1 fw-bold align-items-center px-lg-3 p-lg-3 m-auto mx-5 mt-5 text-center text-lg-start py-lg-3 py-4">
+            <h2
+                class="text-dark fs-lg-1 fw-bold align-items-center px-lg-3 p-lg-3 m-auto mx-5 mt-5 text-center text-lg-start py-lg-3 py-4">
                 Features of Mobile Application
             </h2>
         </div>
     </div>
-    <div class="container-fluid mx-lg-5 mt-lg-3">
-        <div class="row mt-lg-5 px-lg-5">
+    <div class="container-fluid mx-lg-5 mt-lg-3 px-lg-5 mx-lg-5">
+        <div class="row mt-lg-5 px-lg-5" style="  line-height: normal;">
             <div class="col-lg-3 col-md-6 mb-lg-4 ">
                 <div class="card shadow-none">
                     <div class="card-body">
                         <h5 class="card-title">01</h5>
                         <h5 class="card-title">Koha Community</h5>
-                        <p class="card-text">Ensure compatibility and support for Koha's community versions, fostering
+                        <p class="card-text fs-5 ">Ensure compatibility and support for Koha's community versions, fostering
                             connectivity within the Koha community.</p>
                     </div>
                 </div>
@@ -115,7 +138,7 @@
                     <div class="card-body">
                         <h5 class="card-title">02</h5>
                         <h5 class="card-title">Full Catalogue Search</h5>
-                        <p class="card-text">Easily search and explore your library's entire catalogue with
+                        <p class="card-text fs-5 ">Easily search and explore your library's entire catalogue with
                             comprehensive search functionality.</p>
                     </div>
                 </div>
@@ -125,7 +148,7 @@
                     <div class="card-body">
                         <h5 class="card-title">03</h5>
                         <h5 class="card-title">Book Details with Image</h5>
-                        <p class="card-text">Access detailed information about each book, including cover images, for a
+                        <p class="card-text fs-5 ">Access detailed information about each book, including cover images, for a
                             visually enriched browsing experience.</p>
                     </div>
                 </div>
@@ -135,7 +158,7 @@
                     <div class="card-body">
                         <h5 class="card-title">04</h5>
                         <h5 class="card-title">Book Availability Details</h5>
-                        <p class="card-text">Instantly check the availability of books in your library's collection to
+                        <p class="card-text fs-5 ">Instantly check the availability of books in your library's collection to
                             plan your borrowing effectively.</p>
                     </div>
                 </div>
@@ -145,7 +168,7 @@
                     <div class="card-body">
                         <h5 class="card-title">05</h5>
                         <h5 class="card-title">Personalized User Login</h5>
-                        <p class="card-text">Personalize your online catalog with a custom OPAC featuring your
+                        <p class="card-text fs-5 ">Personalize your online catalog with a custom OPAC featuring your
                             institution's logo and name.</p>
                     </div>
                 </div>
@@ -155,7 +178,7 @@
                     <div class="card-body">
                         <h5 class="card-title">06</h5>
                         <h5 class="card-title">User Information Access</h5>
-                        <p class="card-text">Empower users to view their current holdings, payment history, and past
+                        <p class="card-text fs-5 ">Empower users to view their current holdings, payment history, and past
                             reading activity conveniently within the app.</p>
                     </div>
                 </div>
@@ -165,7 +188,7 @@
                     <div class="card-body">
                         <h5 class="card-title">07</h5>
                         <h5 class="card-title">Book Reservation</h5>
-                        <p class="card-text">Reserve desired books in advance directly through the mobile app, ensuring
+                        <p class="card-text fs-5">Reserve desired books in advance directly through the mobile app, ensuring
                             you never miss out on your next read.
                     </div>
                 </div>
@@ -174,8 +197,8 @@
                 <div class="card shadow-none">
                     <div class="card-body">
                         <h5 class="card-title">08</h5>
-                        <h5 class="card-title">Push Notwww.hoifications</h5>
-                        <p class="card-text">Receive timely reminders for overdue books and other important
+                        <h5 class="card-title">Push Notifications</h5>
+                        <p class="card-text fs-5 ">Receive timely reminders for overdue books and other important
                             notifications to stay organized and informed.</p>
                     </div>
                 </div>
@@ -184,46 +207,66 @@
     </div>
 
 
-    <div class="mobilescreens mb-5 pb-5">
-        <h1 class="fw-bold fs-1 text-dark text-center pt-5 mt-lg-5 pb-5 pb-lg-0 container">Options For<span class="quotelibcloud"> Mobile
+    <!-- <div class="mobilescreens mb-5 pb-5 rounded-9">
+        <h1 class="fw-bold fs-1 text-dark text-center pt-5 mt-lg-5 pb-5 pb-lg-0 container">Options For<span
+                class="quotelibcloud"> Mobile
                 Application</span></h1>
         <div class=" container">
             <div class="row  container justify-content-center">
                 <div class="col-sm-5 enlarge-img col-11 p-lg-5">
-                    <div class="card border shadow-lg rounded-9">
-                        <!-- <div class="card-body m-auto p-auto"> -->
-                            <!-- <h4 class="text-dark text-center"><span class="quotelibcloud">Standard Layout </span></h4> -->
-                            <img src="./assets/Property 1=Standard 2.png" alt="" srcset="" class="screenimg  rounded-9 mx-auto px-auto col-12 h-100 h-lg-0 " width="400px" height="740px">
-                           
+                    <div class="card border shadow-md rounded-9">
+                       
+                        <img src="./assets/Property 1=Standard 1.svg" alt="" srcset=""
+                            class="screenimg  rounded-9 mx-auto px-auto col-12 h-100 h-lg-0 " width="500px"
+                            height="840px">
 
-                        <!-- </div> -->
+
+    
                     </div>
                 </div>
-                <div class="col-sm-5 enlarge-img col-11 p-lg-5 mt-5 mt-lg-0">
-                    <div class="card border  shadow-lg rounded-9">
-                        <!-- <div class="card-body m-auto p-auto"> -->
-                            <!-- <h4 class="text-dark text-center"><span class="quotelibcloud">Custom Layout</span></h4> -->
-                            <img src="./assets/Frame 1171275474.png" alt="" srcset="" class="screenimg rounded-9 px-auto  col-12 h-100 h-lg-0 " width="400px" height="740px">
-                                                 </div>
-                    <!-- </div> -->
+                <div class="col-sm-5 enlarge-img2 col-11 p-lg-5 mt-5 mt-lg-0">
+                    <div class="card border  shadow-md rounded-9">
+                     
+                        <img src="./assets/Frame 1171275474.png" alt="" srcset=""
+                            class="screenimg rounded-9 px-auto  col-12 h-100 h-lg-0 " width="400px" height="740px">
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="mobilescreens mb-5 pb-2 rounded-9">
+        <h1 class="fw-bold fs-1 text-dark text-center pt-5 mt-lg-5 pb-5 pb-lg-0 container">Options For<span
+                class="quotelibcloud"> Mobile
+                Application</span></h1>
+        <div class=" container pt-5">
+            <div class="row  container justify-content-center">
+                <div class="col-sm-5 enlarge-img col-11 p-lg-5 " id="firstCard">
+                    <div class="shadow-md rounded-9">
+                        <img src="./assets/Property 1=Standard 1.svg" alt="" srcset=""
+                            class="screenimg    px-auto col-12 h-100 h-lg-0 " width="800px"
+                            height="840px">
+                    </div>
+                </div>
+                
+                <div class="col-sm-5 enlarge-img2 col-11 p-lg-5 mt-5 mt-lg-0" id="secondCard">
+                    <div class="shadow-md rounded-9">
+                        <img src="./assets/Frame 1171275474.png" alt="" srcset=""
+                            class="screenimg rounded-9 px-auto  col-12 h-100 h-lg-0 " width="400px" height="740px">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
+    
 
 
     <div class="end text-white pt-lg-5 pt-0">
         <div class="container pt-4 pb-4">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-lg-6">
                     <div class="card end text-white border-0 shadow-none">
                         <div class="card-body">
                             <h5 class="card-title"><img src="./assets/logo.png" height="70px" width="150px"
@@ -239,7 +282,7 @@
                         <ul class="fs-4 m-0 p-0">
                             <li class="icons link-primary text-white d-inline-block p-3"><i
                                     class="fa-brands fa-facebook"></i></li>
-                            <li class="icons link-primary text-white d-inline-block p-3"><i
+                            <li class="icons link-primary text-white d-inline-block"><i
                                     class="fa-brands fa-twitter"></i></li>
                         </ul>
                     </div>
@@ -285,6 +328,7 @@
 
 
 
+
     <div class="footer text-dark bg-light text-center m-auto p-2">All rights reserved &copy;Libcloud.in</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -300,10 +344,38 @@
         crossorigin="anonymous"></script>
 
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const firstCard = document.getElementById('firstCard');
+    const secondCard = document.getElementById('secondCard');
+    const firstCardImg = firstCard.querySelector('.screenimg');
+    const secondCardImg = secondCard.querySelector('.screenimg');
+
+    // Store the original source and new source of the first card image
+    const originalFirstCardSrc = firstCardImg.src;
+    const secondCardSrc = secondCardImg.src;
+
+    // Change the image of the first card when hovering over the second card
+    secondCard.addEventListener('mouseenter', function() {
+        // Change the image source of the first card to match the second card
+        firstCardImg.src = './assets/Property 1=Standard 2.png';
+        firstCard.style.transform = 'scale(1.0)';
+    });
+
+    // Restore the original image of the first card when mouse leaves the second card
+    secondCard.addEventListener('mouseleave', function() {
+        firstCardImg.src = originalFirstCardSrc;
+        firstCard.style.transform = 'scale(1.1)';
+    });
+});
+
+
+    </script>
 
 
 </body>

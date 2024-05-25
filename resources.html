@@ -18,22 +18,21 @@
 
 <body>
     <div class="header text-white">
-        <ul class="d-flex justify-content-end align-items-center p-1 mb-0">
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-regular fa-envelope px-1"></i>
+        <ul class="d-flex justify-content-lg-end  p-1 mb-0 mx-5 px-lg-4 justify-content-between">
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i class="fa-regular fa-envelope px-1"></i>
                 business@libcloud.in</li>
-            <li class="list-unstyled link-primary text-white cursor-pointer"><i class="fa-solid fa-phone px-1"></i> +91
+            <li class="list-unstyled link-primary text-white cursor-pointer px-lg-4 mx-lg-2"><i class="fa-solid fa-phone px-1"></i> +91
                 28639465
             </li>
-            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-facebook"></i></li>
-            <li class="list-unstyled link-primary text-white cursor-pointer p-0 mr-0"><i
-                    class="fa-brands fa-twitter"></i>
-            </li>
+            <li class="list-unstyled link-primary text-white cursor-pointer mx-3  "><i class="fa-brands fa-facebook"></i></li>
+            <li class="list-unstyled link-primary text-white cursor-pointer "><i class="fa-brands fa-twitter"></i></li>
         </ul>
     </div>
 
-    <nav class="navbar navbar-expand-lg bgnav border border-dark">
+
+    <nav class="navbar navbar-expand-lg bgnav border border-dark sticky-top z-10 bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand companylogo ms-lg-5" href="#"><img src="./assets/logo.png" height="70px"
+            <a class="navbar-brand companylogo ms-lg-5  px-lg-5" href="./index.html"><img src="./assets/logo.png" height="70px"
                     width="150px" id="logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,18 +43,24 @@
                     <li id="home" class="nav-item ms-lg-4 me-lg-3 ">
                         <a class="nav-link  pt-4" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li id="Services" class="nav-item ms-lg-4 me-lg-3">
+                    <!-- <li id="Services" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./services.html">Services</a>
-                    </li>
+                    </li> -->
+                    <li id="Services" class="nav-item dropdown ms-lg-4 me-lg-3">
+                        <a class="nav-link dropdown-toggle pt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="./services.html">Benefits</a>
+                          <a class="dropdown-item" href="./mobileapp.html">Features</a>
+                      </li>
                     <li id="Business" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./businessassociates.html">Business Associates</a>
                     </li>
                     <li id="Contact" class="nav-item ms-lg-4 me-lg-3">
                         <a class="nav-link pt-4" href="./contactus.html">Contact Us</a>
                     </li>
-                    <li id="Resources" class="nav-item ms-lg-4 me-lg-3">
-                        <a class="nav-link active pt-4" href="./resources.html">Resources</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -125,7 +130,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
     <div class="faq mt-5 pt-5 mt-lg-0 pt-lg-0">
@@ -248,8 +253,12 @@
                             <h3 class="card-title text-primary">LibCloud</h3>
                             <p class="card-text">
                             <ul class="list-unstyled">
-                                <li>About Us</li>
-                                <li>Contact Us</li>
+                                <li>
+                                    <a href="./aboutus.html" class="text-white">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="./contactus.html" class="text-white">Contact Us</a>
+                                </li>
                                 <li>Business Associates</li>
                                 <li>FAQ's</li>
                             </ul>
