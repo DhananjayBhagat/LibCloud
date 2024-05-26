@@ -1,17 +1,17 @@
-html,body{
+html,body {
   font-family: "Red Hat Display", sans-serif !important;
   overflow-x: hidden;
 }
 .header,.end {
   background-color: #2f244f;
 }
-.bgnav ,.businessbackground, .quote{
+.bgnav,.businessbackground,.quote {
   background: linear-gradient(254.08deg, rgba(231, 33, 129, 0.1) -1.18%, rgba(186, 54, 156, 0.1) 33.55%, rgba(118, 87, 199, 0.1) 70.55%, rgba(57, 116, 237, 0.1) 100.98%);
 }
-.quote,.chooselibcloud,.quotes, .associateheading, .quoteheading{
+.quote,.chooselibcloud,.quotes,.associateheading,.quoteheading {
   font-size: 60px;
 }
-.quotelibcloud,.quotes,.nav-item :hover,.navbar-nav .nav-link.active{
+.quotelibcloud,.quotes,.nav-item :hover,.navbar-nav .nav-link.active {
   background: -webkit-linear-gradient(50deg, #2c7bf5, #ef1d7c) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
@@ -24,70 +24,71 @@ html,body{
   background-color: #9ac9e925;
   width: 125px;
 }
-.ourservices, .mobilescreens{
+.ourservices,.mobilescreens {
   background: linear-gradient(to bottom, #eff3fe 0%, #eff3fe 62%, #ffffff 62%, #ffffff 100%);
 }
-.banner, .card1{
+.banner,.card1 {
   background-color: #eff3fe;
 }
-.readmore,.ourservices button .contactus ,.form-control.active {
+.readmore,.ourservices button .contactus,.form-control.active {
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #2c7bf5, #ef1d7c) border-box;
   border: 2px solid transparent;
 }
-.faq, .macbookimg{
+.faq,.macbookimg {
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 45%, #eff3fe 45%, #eff3fe 100%);
 }
-.cloudimages{
+.cloudimages {
   left: 12vw;
   top: 0px;
 }
-.aboutusvector{
+.aboutusvector {
   right: 0vw;
   top: 20vh;
 }
 .enlarge-img,.enlarge-img2 {
   transition: transform 0.2s ease;
 }
-.enlarge-img, .enlarge-img2:hover {
+.enlarge-img,.enlarge-img2:hover {
   transform: scale(1.1);
 }
 .accordion-item.active {
-  border: 1px solid;
-  border-image: linear-gradient(90deg, #2c7bf5, #ef1d7c);
-  border-image-slice: 1;
+  border:double 2px transparent;
+  background-image: linear-gradient(white,white),linear-gradient(90deg, #2c7bf5, #ef1d7c);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
 }
 .predefinedreportimg {
   right: 15vw;
 }
 .customopacimg {
   left: 17vw;
-  top:22vh;
+  top: 22vh;
 }
-.arrowvector{
+.arrowvector {
   right: 10vw;
   bottom: 0vh;
 }
-.card1, .accordion-button{
-background-color: #fde9f241;
+.card1,.accordion-button {
+  background-color: #fde9f241;
 }
-.card2{
+.card2 {
   background-color: #ebf1fd71;
 }
-.enlarge-img2:hover{
+.enlarge-img2:hover {
   content: url('./assets/Frame\ 1171275474.svg');
 }
-.accordion-button::after{
-  background-image: url("./assets/Group\ 1171275448\(1\).svg") !important; 
+.accordion-button::after {
+  background-image: url("./assets/Group\ 1171275448\(1\).svg") !important;
   transform: scale(2.0);
 }
-.accordion-button:not(.collapsed)::after{
-  background-image: url("./assets/Group\ 1171275448.svg") !important;  
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./assets/Group\ 1171275448.svg") !important;
   transform: scale(1.5);
 }
-#cardshadow{
+#cardshadow {
   box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.3)
 }
-#homecards{
+#homecards {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 @media screen and (max-width: 915px) {
@@ -98,25 +99,25 @@ background-color: #fde9f241;
     width: 30vw;
     height: 7vh;
   }
-  .quote, .serviceinfo .kohalms, .mobileapp{
+  .quote,  .serviceinfo .kohalms,  .mobileapp {
     font-size: 35px !important;
   }
-  #doublequote{
-      width: 35px;
+  #doublequote {
+    width: 35px;
   }
   .aboutus .info {
     padding-top: 30px;
   }
-  .image31{
+  .image31 {
     width: 90vw;
   }
- .smallheadingcloud{
-  height: 100px;
-  width: 100px;
-}
-.headingcloud{
-  height: 50px;
-}
+  .smallheadingcloud {
+    height: 100px;
+    width: 100px;
+  }
+  .headingcloud {
+    height: 50px;
+  }
   /* .macbook{
     width: 80vw;
     height: 100vh;
