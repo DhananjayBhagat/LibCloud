@@ -91,7 +91,7 @@ html,body {
 #homecards {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 576px) {
   .header ul li {
     font-size: 10px;
   }
@@ -132,3 +132,6 @@ html,body {
     width: 50vw;
     height: 100vh;
   } */}
+  @media screen and (max-width: 915px) {
+
+  }
