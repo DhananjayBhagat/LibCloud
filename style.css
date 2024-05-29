@@ -1,6 +1,6 @@
 html,body {
   font-family: "Red Hat Display", sans-serif !important;
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
 .header,.end {
   background-color: #2f244f;
@@ -61,7 +61,7 @@ html,body {
   right: 15vw;
 }
 .customopacimg {
-  left: 17vw;
+  left: 20vw;
   top: 22vh;
 }
 .arrowvector {
