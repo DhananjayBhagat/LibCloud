@@ -98,6 +98,9 @@ html,body {
   .quote,  .serviceinfo .kohalms,  .mobileapp {
     font-size: 35px !important;
   }
+  .chooselibcloud{
+    font-size: 33px;
+  }
   #doublequote {
     width: 35px;
   }
@@ -115,7 +118,10 @@ html,body {
     height: 50px;
   }}
   @media screen and (min-width: 768px) and (max-width:991px){
-     .quote{
+    .quote .quote-content .quoteheading1{
+      font-size: 45px !important;
+    }   
+    .quote{
       height: 440px !important;      
     }
     .predefinedreportimg {
@@ -124,4 +130,11 @@ html,body {
     .customopacimg {
       left:20vw !important;
       top: 30vh !important;
+    }  }
+  @media screen and (min-width:577px) and (max-width:767px) {
+    .quote .quote-content .quoteheading1{
+       font-size: 40px !important;
+    }     
+    .quote{
+  height: 48vh !important;
     }  }
