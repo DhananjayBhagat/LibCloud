@@ -217,7 +217,8 @@ function submitContactForm() {
             console.log(JSON.stringify(data));
 
             if (data.code == 200) {
-                alert('Your message has been sent successfully!');
+                // alert('Your message has been sent successfully!');
+                alert(data.message);
 
                 document.querySelector('form').reset();
             } else {
