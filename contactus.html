@@ -128,58 +128,57 @@
             <form id="contactForm" method="post" class="needs-validation" novalidate>
                 <div class="row pt-5">
                     <div class=" col-sm-12 col-lg-6 col-md-6">
-                        <label for="firstname">First Name</label>
-                        <input type="text" class="form-control rounded-5 border-1" id="firstname" 
-                            placeholder="Enter your First name" required>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" class="form-control rounded-5 border-1" id="fullname" 
+                            placeholder="Enter your Full name" required>
                             <div class="invalid-feedback">
-                                Please provide a First Name.
+                                Please provide a Full Name.
                               </div>
                     </div>
-                    <div class=" col-sm-12 col-lg-6 col-md-6 pt-3 pt-lg-0 pt-md-0">
+                    <!-- <div class=" col-sm-12 col-lg-6 col-md-6 pt-3 pt-lg-0 pt-md-0">
                         <label for="lastname">Last Name</label>
                         <input type="text" class="form-control rounded-5 border-1" id="lastname"
                             placeholder="Enter your Last name" required>
                             <div class="invalid-feedback">
                                 Please provide a Last Name.
                               </div>
+                    </div> -->
+                    <div class=" col-sm-12 col-lg-6 col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control rounded-5 border-1" id="email"
+                            placeholder="Enter your Email" required>
+                            <div class="invalid-feedback pt-1">
+                                Please provide a Email.
+                              </div>
                     </div>
                 </div>
                 <div class="row pt-4">
-                    <div class=" col-sm-12 col-lg-6 col-md-6">
+                    <!-- <div class=" col-sm-12 col-lg-6 col-md-6">
                         <label for="title">Title</label>
                         <input type="text" class="form-control rounded-5 border-1" id="title"
                             placeholder="Enter The Title" required>
                             <div class="invalid-feedback">
                                 Please provide a Title.
                               </div>
-                    </div>
+                    </div> -->
                     <div class=" col-sm-12 col-lg-6 col-md-6 pt-3 pt-lg-0 pt-md-0 ">
                         <label for="phoneno">Phone Number</label>
-                        <input type="number" class="form-control rounded-5 border-1" id="phoneno"
+                        <input type="text" class="form-control rounded-5 border-1" id="phoneno"
                             placeholder="Enter your phone number" required>
-                            <div class="invalid-feedback">
-                                Please provide a Phone Number.
-                              </div>
-                    </div>
-                </div>
-                <div class="row pt-4">
-                    <div class=" col-sm-12 col-lg-6 col-md-6">
-                        <label for="title">Email</label>
-                        <input type="email" class="form-control rounded-5 border-1" id="email"
-                            placeholder="Enter your Email" required>
-                            <div class="invalid-feedback">
-                                Please provide a Email.
+                            <div class="invalid-feedback mobile">
+                                Please provide a 10 Digit Phone Number.
                               </div>
                     </div>
                     <div class=" col-sm-12 col-lg-6 col-md-6 pt-3 pt-lg-0 pt-md-0 ">
-                        <label for="phoneno">Office Number</label>
-                        <input type="number" class="form-control rounded-5 border-1" id="office_number"
+                        <label for="office_number">Office Number</label>
+                        <input type="text" class="form-control rounded-5 border-1" id="office_number"
                             placeholder="Enter your Office number" required>
-                            <div class="invalid-feedback">
-                                Please provide a Office Number.
+                            <div class="invalid-feedback mobile">
+                                Please provide a 10 Digit Office Number.
                               </div>
                     </div>
                 </div>
+              
                 <!-- <div class="row pt-4">
                     <div class=" col-sm-12 col-lg-6 col-md-6">
                         <label for="text">Address</label>
@@ -217,15 +216,35 @@
                     </div>
                 </div> -->
                 <div class="row pt-4">
+                      <div class=" col-sm-12 col-lg-6 col-md-6">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control rounded-5 border-1" id="subject"
+                            placeholder="Enter The Subject" required>
+                            <div class="invalid-feedback">
+                                Please provide a Subject.
+                              </div>
+                    </div>
                    
-                    <div class=" col-sm-12 col-lg-6 col-md-6 pt-3 pt-lg-0 pt-md-0 ">
+                    <!-- <div class=" col-sm-12 col-lg-6 col-md-6 pt-3 pt-lg-0 pt-md-0 ">
                         <label for="city">Products</label>
                         <input type="text" class="form-control rounded-5 border-1" id="products"
                             placeholder="Enter your Products" required>
                             <div class="invalid-feedback">
                                 Please provide Products.
                               </div>
+                    </div> -->
+                    <div class="col-sm-12 col-lg-6 col-md-6">
+                        <label for="products">Products</label>
+                        <select class="form-control rounded-5 border-1" id="products" required>
+                            <option value="">Choose Subject</option>
+                            <option value="koha">Koha</option>
+                            <option value="application">Application</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a Product.
+                        </div>
                     </div>
+                    
                 </div>
             
                 <div class="row pt-4">
